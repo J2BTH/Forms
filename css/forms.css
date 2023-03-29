@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f6eded;
+}
+
+.topnav img {
+  margin-right: 10px;
+  width: 50px;
+  height: auto; /* set the height of the logo */
+  padding: 10px; /* add padding around the logo */
+}
+
+.topnav-center {
+  float: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topnav-center a {
+  padding: 14px 16px;
+  color: #0c0b0b;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav-center a:hover {
+  background-color: #ffe4e4;
+  color: black;
+}
+
+.topnav-center a.active {
+  background-color: #04AA6D;
+  color: rgb(232, 218, 218);
+}
+
+.topnav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topnav-right a {
+  padding: 14px 16px;
+  color: #131212;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav-right a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav-right a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav-right .cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topnav-right .cart span {
+  margin-left: 5px;
+}
+    
+ h2 {
+  margin-top: 0;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column; /* add this line to make the children elements centered vertically */
+}
+form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* add this line to center the form horizontally */
+  height: 100%; /* make the form full height of the parent element (form-container) */
+}
+
+.form-group {
+  margin: 10px 0;
+  text-align: center;
+  width: 100%; /* added to make the input fields 100% width of their parent element */
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* added to make the links 100% width of their parent element */
+}
+.account {
+  color: black;
+}
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%; /* added to make the input fields 100% width of their parent element */
+}
+
+button[type="submit"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #030303;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%; /* added to make the submit button 50% width of its parent element */
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
